@@ -7,11 +7,10 @@ import javax.persistence.*;
 
 @Getter
 @Setter
-@Table
 @Entity
-public class User {
-    @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
+public class UserCenter {
+    @Id @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
     private String name;
+    private String age;
 }
